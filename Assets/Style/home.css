@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(28, 64, 64, 0.7);
+    z-index: 100;
+}
+
+.frawlLogo{
+    position: absolute;
+    height: 62px;
+    margin: 10px 0 0 30px;
+}
+
+.menuLogo{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    width: 45px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 7px 0 7px 30px;
+    border-top: 1px solid rgba(28, 64, 64, 0.5);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: #fef481;
+}
+
+.dropdown{
+    position: absolute;
+    top: 18px;
+    right: 38px;
+    background-color: #40676A;
+    width: 200px;
+    height: 270px;
+    padding-top: 50px;
+    display: none;
+    transition: 0.5s;
+}
+
+.menu:hover .dropdown{
+    display: block;
+}
+
+.jumbotron{
+    height: 100vh;
+    background-image: url(../gambar/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.jum-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron img{
+    position: absolute;
+    max-width: 40vw;
+    top: 40%;
+}
+
+.jum-content div{
+    position: absolute;
+    bottom: 10%;
+}
+
+.jumbotron button{
+    width: 400px;
+    padding: 10px;
+    background-color: #3F6367;
+    border: none;
+    color: white; 
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    bottom: 10%;
+}
+
+.jumbotron button:hover{
+    background-color: #1C4040;
+    font-size: 35px;
+}
+
+.container{
+    background-color: #121E2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.container h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container p{
+    font-size: 25px;
+}
+
+.content{
+    width: 1000px;
+    color: white;
+}
+
+.aboutCont p{
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.card{
+    width: 228px;
+    height: 228px;
+    background-color: #1C4040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureCont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.featureCont img{
+    width: 156px;
+}
+
+.card:hover{
+    background-color: #3F6367;
+    transition: 0.3s;
+}
+
+.card:hover img{
+    width: 170px;
+    transition: 0.3s;
+}
+
+.imageSlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSlider button{
+    width: 40px;
+    height: 70px;
+    background-color: #1C4040;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.imageSlider button:hover{
+    background-color: #3F6367;
+}
+
+.imageEvents{
+    width: 500px;
+    display: flex;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.imageEvents img{
+    width: 500px;
+    object-fit: cover;
+}
+
+footer{
+    height: 100px;
+    background-color: #1C4040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.imageFooter img{
+    width: 28px;
+    margin: 10px;
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    .content{
+        width:80vw;
+    }
+
+    .content p{
+        font-size: 20px;
+    }
+
+    .jum-content img{
+        min-width: 250px;
+        /* margin-top: 60%; */
+    }
+
+    .jum-content button{
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .featureCont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .card img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .card:hover img{
+        width: 70%;
+        height: 70%;
+    }
+}

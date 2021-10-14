@@ -1,0 +1,109 @@
+.container{
+  min-height: 84vh;
+}
+
+.content{
+  width: 600px;
+}
+
+.content p{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #fff;
+}
+
+form div{
+  margin: 5px 0 20px 0;
+  display: flex;
+}
+
+form div label{
+  margin-right: 10px;
+}
+
+input[type=radio]{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.term{
+  font-size: 20px;
+}
+
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr{
+  margin-bottom: 15px;
+}
+
+.term{
+  font-size: 20px !important;
+}
+
+a {
+  color:#fef481;
+  text-decoration: none;
+}
+
+input[type=submit] {
+  padding: 16px 20px;
+  margin: 8px 0;
+  background-color: #1C4040;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.btn-register:hover {
+  background-color: #40676A;
+}
+
+#requiredName, #requiredEmail, #requiredPass, #requiredGender, #requiredTerm{
+  margin-top: -15px;
+  font-size: 15px;
+  display: none;
+  text-align: left;
+  color: #fef481;
+}
+
+#requiredTerm{
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 800px){
+  .content{
+      width: 80vw;
+  }
+
+  .content p{
+    font-size: 20px;
+  }
+
+  .tul img{
+      width: 80%;
+      height: 80%;
+  }
+}

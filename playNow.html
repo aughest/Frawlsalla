@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Now</title>
+    <link rel="stylesheet" href="Assets/Style/style.css">
+    <link rel="stylesheet" href="Assets/Style/playNow.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img class="frawlLogo" src="Assets/gambar/logo.png"></a>
+            <div class="menu">
+                <img class="menuLogo" src="Assets/gambar/menu.png">
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="screenshots.html">Screenshoots</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="playNow.html">Play Now</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>  
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="tul">
+                <img src="Assets/gambar/tulisanRegister.png" alt="">
+            </div>
+            <p>before you play<br>you must register first!</p>    
+            <form name="form" method="post" action="home.html">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name">
+                <p id="requiredName"></p>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" name="email" id="email">
+                <p id="requiredEmail"></p>
+                
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" id="password">
+                <p id="requiredPass"></p>
+
+                <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+                <p id="requiredGender"></p>
+
+                <hr>
+
+                <input type="checkbox" name="term" id="term">
+                <label class="term" for="termCheck">By creating an account you agree to our <a href="#">Terms & Privacy</a></label>
+                <br>
+                <p id="requiredTerm"></p>
+
+                <input type="submit" name="Register" onclick="return validate()">
+
+            </form>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="gambarFooter">
+            <a href="https://twitter.com/Brawlhalla"><img src="Assets/gambar/tw.png" alt=""></a>
+            <a href="https://instagram.com/brawlhallafr?utm_medium=copy_link"><img src="Assets/gambar/ig.png" alt=""></a>
+        </div>
+        <p>© 2021 | Frawlsalla</p>
+    </footer>
+    
+    <script src="Assets/Script/playNow.js"></script>
+</body>
+</html>

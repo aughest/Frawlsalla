@@ -1,0 +1,38 @@
+.col{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.col:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.row p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.row img{
+    height: 250px;
+}
+
+@media screen and (max-width: 800px){
+    .col{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .row{
+        margin-bottom: 30px;
+    }
+
+    .row img{
+        min-height: 190px;
+        height: 50vw;
+    }
+
+}
